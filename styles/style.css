@@ -1,0 +1,44 @@
+/* 
+- Mobile: 375px
+- Desktop: 1440px
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+  --text-paragraph: 16px;
+}
+
+@font-face {
+  font-family: Young Serif;
+  src: url(https://fonts.google.com/specimen/Young+Serif);
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url(https://fonts.google.com/specimen/Outfit);
+}
+
+
+
+/* ******************** FOOTER ******************* */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
