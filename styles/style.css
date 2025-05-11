@@ -32,7 +32,7 @@
 }
 
 body {
-  background-color: var(--stone-100);
+  background: var(--stone-100);
 }
 
 .container {
@@ -55,27 +55,42 @@ body {
 }
 
 .preparation {
-  background-color: var(--rose-50);
-}
+  background: var(--rose-50);
+  width: 100%;
+}  
 
 h3 {
   color: var(--rose-800);
 }
 
-/* .ingredients .instructions .nutrition {
-  border-bottom: 2px solid black;
-} */
-
-.ingredients {
-  border-bottom: 2px solid rgb(242, 240, 240);
+ul, ol{
+ list-style-position: inside;
 }
 
+
+.ingredients, 
+.instructions, 
+.nutrition {
+  width: 100%;
+  border-bottom: 2px solid rgb(242, 240, 240);
+  padding-bottom: 20px;
+  
+}
+
+
+.ingredients {
+  
+  
+}
+
+
+
 .instructions {
-  border-bottom: 2px solid rgb(242, 240, 240); 
+  
 }
 
 .nutrition li {
-  border-bottom: 2px solid rgb(242, 240, 240);
+  
 }
 
 /* ******************** FOOTER ******************* */
