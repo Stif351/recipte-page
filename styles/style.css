@@ -33,28 +33,32 @@
 
 body {
   background: var(--stone-100);
+  line-height: 1.5;
 }
 
 h1,
 h2,
 h3 {
   font-family: Young Serif;
-  /* font-weight: bold; */
 }
 h1 {
-  /* font-family: Young Serif; */
   font-size: 48px;
-  /* font-weight: 600; */
+
   color: var(--stone-900);
-  margin: 40px 0;
+  margin: 10px 0;
 }
 h2 {
   color: var(--brown-800);
-  margin: 0px 0 28px 0px;
+  margin: 10px 0px 20px;
 }
 h3 {
   color: var(--rose-800);
   margin-bottom: 18px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .container {
@@ -65,10 +69,10 @@ h3 {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  gap: 40px;
-  margin: 120px auto;
+  gap: 20px;
+  margin: 120px auto 0;
   padding: 44px;
-  border-radius: 10px;
+  border-radius: 20px;
   color: var(--stone-600);
 }
 
@@ -86,7 +90,7 @@ h3 {
 .preparation {
   background: var(--rose-50);
   width: 100%;
-  /* height: 180px; */
+
   padding: 32px;
   border-radius: 10px;
 }
@@ -95,17 +99,14 @@ h3 {
 }
 
 ul,
-ol
-{
-  list-style-position:outside;
+ol {
+  list-style-position: outside;
   margin-left: 20px;
-  
 }
-li{
+li {
   padding-left: 10px;
+  margin-bottom: 10px;
 }
-
-
 
 .ingredients,
 .instructions,
@@ -116,16 +117,13 @@ li{
   font-family: Outfit;
   font-size: 16px;
 }
+
 span {
-  /* color: var(--stone-900); */
   font-weight: 600;
 }
 
 li::marker {
- 
   color: brown;
-
- 
 }
 .ingredients {
   font-family: Outfit;
@@ -135,27 +133,62 @@ li::marker {
   list-style: var(--rose-800);
 }
 
-.nutrition li {
-  /* display: flex; */
-  margin-left: 20px;
-  list-style: none;
-
-  border-bottom: 2px solid gray;
+.nutrition {
+  border: none;
 }
 
+table {
+  width: 100%;
+}
 
-.one {
-  color: var(--brown-800);
- 
-  
+td {
+  font-weight: bold;
+  border-bottom: 2px solid var(--stone-150);
+  padding: 10px;
+}
+
+td:last-child {
+  color: var(--rose-800);
+}
+
+tr:last-child td {
+  border: none;
 }
 
 /* ******************** FOOTER ******************* */
 
 .attribution {
-  font-size: 11px;
+  font-size: 16px;
   text-align: center;
+
+  padding: 30px;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 375px) {
+  .container {
+    max-width: 375px;
+    padding: 0px;
+    margin: 0 auto;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+  .ingredients,
+  .instructions,
+  .nutrition,
+  .preparation,
+  .description {
+    width: 80%;
+    margin: 0 32px;
+    padding: 0;
+  }
+
+  p.description {
+    margin: 0;
+    width: 100%;
+  }
 }
